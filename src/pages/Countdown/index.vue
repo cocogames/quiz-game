@@ -42,7 +42,7 @@ export default {
       if (this.count === 3) {
         clearInterval(this.interval);
         // 使路由在quiz页返回直接跳到首页
-        this.$router.replace('/quiz');
+        this.$router.replace('/fool');
         return;
       }
       this.ready = true;

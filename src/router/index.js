@@ -50,6 +50,10 @@ export default new Router({
       component: Quiz
     },
     {
+      path: '/fool',
+      component: Fool
+    },
+    {
       path: '*',
       component: NotFound
     }
