@@ -8,6 +8,7 @@ import SharePage from '@/components/SharePage';
 import PrizePage from '@/components/PrizePage';
 import Countdown from '@/pages/Countdown';
 import Quiz from '@/pages/Quiz';
+import Fool from '@/pages/Fool';
 import NotFound from '@/pages/NotFound';
 
 Vue.use(Router);
