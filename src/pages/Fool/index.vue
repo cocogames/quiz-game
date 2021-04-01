@@ -132,8 +132,8 @@ export default {
       currentQuestion: 0, // 当前第几题
       totalTime: 10, // 总共答题时间
       restTime: 10, // 剩余答题时间
-      isAnswered: false,
-      isRight: false, // 本题是否答对
+      isAnswered: true,
+      isRight: true, // 本题是否答对
       isEnd: false, // 是否结束（全部答对或答错一题）
       optionsNum: 4,
       optionsInfo: [],
@@ -143,34 +143,34 @@ export default {
       successMessage: [
         {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }
       ],
       failMessage: [
         {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }, {
           title: '恭喜你中奖了',
-          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取'
+          text: '恭喜你中了1个亿，请乘坐未来号前往北京驻火星办事处领取～'
         }
       ]
     };
@@ -179,7 +179,7 @@ export default {
     resetData() {
       this.show = false;
       this.optionsInfo = new Array(this.optionsNum).fill({ selected: false });
-      this.isRight = false;
+      this.isRight = true;
       this.restTime = 10;
     },
     // 倒计时
